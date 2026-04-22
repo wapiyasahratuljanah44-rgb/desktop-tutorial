@@ -2,95 +2,145 @@
 <html lang="id">
 <head>
     <meta charset="UTF-8">
-    <title>My Portfolio</title>
+    <title>Portfolio Saya</title>
+
     <style>
         body {
             font-family: Arial;
             margin: 0;
-            padding: 0;
+            background-color: #eef2f3;
         }
+
         header {
-            background: #4d4545;
-            color: rgba(245, 247, 247, 0.89);
-            padding: 10px;
+            background: linear-gradient(to right, #4facfe, #00f2fe);
+            color: rgb(232, 132, 132);
             text-align: center;
+            padding: 20px;
         }
+
+        nav {
+            text-align: center;
+            background: #a0a9a8;
+            padding: 10px;
+        }
+
         nav a {
-            color: rgb(228, 188, 188);
-            margin: 0 10px;
+            color: rgb(87, 197, 54);
+            margin: 0 15px;
             text-decoration: none;
         }
+
+        nav a:hover {
+            color: yellow;
+        }
+
         .container {
             padding: 20px;
         }
+
         .profile {
             text-align: center;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
         }
+
         .profile img {
-            width: 120px;
+            width: 130px;
             border-radius: 50%;
         }
+
+        .section {
+            margin-top: 20px;
+            background: white;
+            padding: 15px;
+            border-radius: 10px;
+        }
+
         .portfolio {
             display: flex;
             gap: 10px;
-            overflow-x: auto;
         }
+
         .portfolio img {
-            width: 200px;
+            width: 180px;
+            border-radius: 10px;
+        }
+
+        footer {
+            text-align: center;
+            background: #222;
+            color: white;
+            padding: 10px;
+            margin-top: 20px;
         }
     </style>
 </head>
+
 <body>
 
-<!-- Header -->
 <header>
-    <h1>Welcome to My Portfolio</h1>
-    <nav>
-        <a href="#">Home</a>
-        <a href="#">About</a>
-        <a href="#">Contact</a>
-    </nav>
+    <h1>Portfolio Saya</h1>
+    <p>Selamat datang di website pribadi saya</p>
 </header>
+
+<nav>
+    <a href="#">Home</a>
+    <a href="#">Skills</a>
+    <a href="#">Contact</a>
+</nav>
 
 <div class="container">
 
-    
+    <!-- Profile -->
     <div class="profile">
-        <img src="foto profil.jpeg" alt="Foto Profil">
+        <img src="foto profil.jpeg" alt="Foto">
         <h2>Wapiya Sahratul Janah</h2>
         <p>Mahasiswa Informatika</p>
     </div>
 
-   
-    <h3>Skills</h3>
-    <ul>
-        <li>SQL</li>
-        <li>Desain</li>
-        <li>JavaScript</li>
-        <li>Python</li>
-    </ul>
-
-    <h3>Projects</h3>
-    <ul>
-        <li>Sistem Informasi Pajak</li>
-        <li>Software Akuntansi</li>
-        <li>Website Perusahaan</li>
-    </ul>
-
-    
-    <h3>Portfolio</h3>
-    <div class="portfolio">
-        <img src="https://via.placeholder.com/200" alt="">
-        <img src="https://via.placeholder.com/200" alt="">
-        <img src="https://via.placeholder.com/200" alt="">
+    <!-- Skills -->
+    <div class="section">
+        <h3>Skills</h3>
+        <ul>
+            <li>Capcut</li>
+            <li>Menulis Cerpen</li>
+            <li>Database MySQL</li>
+        </ul>
     </div>
 
-   
-    <h3>Contact</h3>
-    <p>Email: wapiyasahratuljanah44@gmail.com</p>
-    <p>Instagram: @wapiyaaa__</p>
+    <!-- Projects -->
+    <div class="section">
+        <h3>Projects</h3>
+        <ul>
+            <li>Jasa Edit Capcut</li>
+            <li>Sistem Database Apotik</li>
+            <li>Adobe Photosop</li>
+        </ul>
+    </div>
+
+    <!-- Gallery -->
+    <div class="section">
+        <h3>Gallery</h3>
+        <div class="portfolio">
+            <img src="https://pin.it/6ZpGe8S1h">
+            <img src="Screenshot 2025-05-26 200131.png">
+            <img src="https://i.pinimg.com/736x/aa/28/ae/aa28ae07cedc8ad094fcf2d1baa030bb.jpg">
+        </div>
+    </div>
+
+    <!-- Contact -->
+    <div class="section">
+        <h3>Contact</h3>
+        <p>Email: wapiyasahratuljanah44@gmail.com</p>
+        <p>Instagram: @wapiyaaa__</p>
+    </div>
 
 </div>
+
+<footer>
+    <p>© 2026 Nama Kamu</p>
+</footer>
 
 </body>
 </html>
