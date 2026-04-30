@@ -1,7 +1,7 @@
 #search {
     width: 100%;
-    height: 80em;
-    background-image: url("https://i.pinimg.com/736x/90/cb/2a/90cb2a40ec164e49ee533fc3a40366bf.jpg");
+    height: 50em;
+    background-image: url("https://i.pinimg.com/736x/88/04/d2/8804d261e5d3b4cbddaf73fc98f00842.jpg");
     background-size: cover;
     display: flex;
     justify-content: center;
@@ -14,7 +14,7 @@ body {
 }
 
 .title {
-    color: rgb(7, 0, 0);
+    color: rgb(3, 19, 11);
     text-align: center;
 }
 
@@ -43,7 +43,7 @@ body {
     align-items: center;
     padding: 3em;
     border-radius: 1em;
-    color: white;
+    color: rgb(119, 106, 106);
     gap: 2em;
 }
 
@@ -75,7 +75,7 @@ body {
     align-items: start;
     max-width: 80rem;
     margin: 0 auto;
-    background-color: rgb(209, 228, 244);
+    background-color: rgb(171, 181, 189);
 }
 
 .gadget-list h2 {
@@ -137,12 +137,12 @@ body {
 .step p {
     font-size: 0.9rem;
     line-height: 1.4;
-    color: #666;
+    color: #150808;
 }
 
 .btn-rent {
     background-color: #27ae60;
-    color: white;
+    color: rgb(255, 255, 255) (239, 241, 241);
     border: none;
     padding: 10px 20px;
     margin-top: 10px;
