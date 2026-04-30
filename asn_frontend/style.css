@@ -75,7 +75,7 @@ body {
     align-items: start;
     max-width: 80rem;
     margin: 0 auto;
-    background-color: rgb(229, 227, 215);
+    background-color: rgb(209, 228, 244);
 }
 
 .gadget-list h2 {
@@ -118,13 +118,13 @@ body {
     flex: 1;
     min-width: 200px;
     padding: 20px;
-    background: #c59c9c;
+    background: #dbc0c0;
     border-radius: 10px;
     box-shadow: 0 2px 10px rgba(0,0,0,0.05);
 }
 
 .step-number {
-    background: #141410;
+    background: #424240;
     width: 40px;
     height: 40px;
     line-height: 40px;
