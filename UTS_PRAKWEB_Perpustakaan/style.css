@@ -1,4 +1,4 @@
-/* Reset CSS */
+
 * {
     margin: 0;
     padding: 0;
@@ -14,7 +14,7 @@ body {
     min-height: 100vh;
 }
 
-/* Header & Navigasi */
+
 header {
     background-color: #1a2a6c;
     color: white;
@@ -113,4 +113,149 @@ footer {
     text-align: center;
     padding: 1.5rem;
     margin-top: auto;
+}
+
+/* --- COVER BUKU (Style untuk tag <img>) --- */
+.book-cover {
+    width: 120px;          /* Lebar tetap */
+    height: 180px;         /* Tinggi tetap, sesuaikan jika perlu */
+    object-fit: cover;     /* KUNCI: Agar gambar tidak gepeng */
+    border-radius: 5px;    /* Sudut melengkung */
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.book-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.book-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+/* --- Styling Halaman Tentang Kami --- */
+.about-card {
+    background: white;
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+}
+
+.about-content-wrapper {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+}
+
+.about-text {
+    flex: 1.5;
+}
+
+.about-image {
+    flex: 1;
+}
+
+.about-image img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.jam-box {
+    background: #f8f9fa;
+    padding: 20px;
+    border-radius: 8px;
+    border-left: 5px solid #1a2a6c;
+    margin-top: 20px;
+}
+
+.jam-box h3 {
+    margin-bottom: 15px;
+    color: #1a2a6c;
+}
+
+.jam-box ul {
+    list-style: none;
+}
+
+.jam-box li {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 0;
+    border-bottom: 1px dashed #ddd;
+}
+
+.jam-box li:last-child {
+    border-bottom: none;
+}
+
+.status-tutup {
+    color: #b21f1f; /* Warna merah untuk status tutup */
+}
+
+/* Responsif untuk layar HP */
+@media (max-width: 768px) {
+    .about-content-wrapper {
+        flex-direction: column;
+        text-align: center;
+    }
+    .jam-box li {
+        flex-direction: column;
+        gap: 5px;
+    }
+}
+
+/* Styling Form agar Rapi */
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    text-align: left;
+}
+
+.form-group label {
+    font-weight: bold;
+    color: #1a2a6c;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-family: inherit;
+    width: 100%;
+}
+
+.contact-form textarea {
+    height: 120px;
+    resize: vertical;
+}
+
+.btn-kirim {
+    background: linear-gradient(135deg, #1a2a6c, #b21f1f);
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+    width: fit-content; /* Tombol tidak kepanjangan */
+}
+
+.btn-kirim:hover {
+    transform: scale(1.05);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
 }
