@@ -252,7 +252,7 @@ footer {
     font-weight: bold;
     cursor: pointer;
     transition: 0.3s;
-    width: fit-content; /* Tombol tidak kepanjangan */
+    width: fit-content; 
 }
 
 .btn-kirim:hover {
